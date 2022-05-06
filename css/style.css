@@ -5,6 +5,39 @@
     --color-primary: #1abc9c;
 }
 
+.bg_green {
+    background-color: var(--color-primary);
+}
+
+.section {
+    padding: 4.375rem 0;
+}
+
+.box {
+    color: var(--color-white);
+}
+
+.star::after,
+.star::before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 140px;
+    margin: 0 .9375rem;
+    border-radius: .375rem;
+    background-color: var(--color-white);
+}
+
+.star-black::after,
+.star-black::before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 140px;
+    margin: 0 .9375rem;
+    border-radius: .375rem;
+    background-color: #2b3d4f;
+}
 
 /* Header */
 header {
@@ -44,7 +77,6 @@ nav {
 
 /* Section Portfolio */
 .section-presentation {
-    background-color: var(--color-primary);
     padding-top: 5rem;
 }
 
@@ -70,7 +102,7 @@ nav {
     text-align: center;
 }
 
-.avatar-profile h1 {
+.box h1 {
     font-size: 3.4375rem;
     padding-bottom: 1.25rem;
 }
@@ -87,52 +119,41 @@ nav {
     padding: 0 .5rem;
 }
 
-.star::after,
-.star::before {
-    content: "";
-    display: block;
-    height: 4px;
-    width: 140px;
-    margin: 0 .9375rem;
-    border-radius: .375rem;
-    background-color: var(--color-white);
-}
-
 .description {
     font-size: 1.4375rem;
     font-weight: 600;
 }
 
-/* Section Portfolio */
-.box-portfolio {
+/* Section About */
+.box {
     text-align: center;
 }
 
-.box-portfolio h3 {
+.box-black {
+    color: black;
+}
+
+.box h3 {
     font-size: 2.8125rem;
     padding-bottom: 1.25rem;
 }
 
-.star.star-portfolio {
+.star.star-black{
     color: #2b3d4f;
-}
-
-.star-portfolio::after,
-.star-portfolio::before {
-    content: "";
-    display: block;
-    height: 4px;
-    width: 140px;
-    margin: 0 .9375rem;
-    border-radius: .375rem;
-    background-color: #2b3d4f;
-}
-
-.section-portfolio {
-    padding: 4.375rem 0;
 }
 
 .card_img {
     border-radius: 1.25rem;
     overflow: hidden;
+}
+
+.container_small {
+    max-width: 720px;
+    margin: 0 auto;
+    color: var(--color-white);
+}
+
+.btn_white {
+    color: var(--color-white);
+    border: .0625rem solid var(--color-white);
 }
