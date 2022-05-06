@@ -7,6 +7,14 @@
 
 
 /* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
 nav {
     background-color: var(--color-nav);
     padding: .9375rem 0;
@@ -35,8 +43,9 @@ nav {
 }
 
 /* Section Portfolio */
-.section-portfolio {
+.section-presentation {
     background-color: var(--color-primary);
+    padding-top: 5rem;
 }
 
 .avatar-box {
@@ -74,7 +83,7 @@ nav {
 }
 
 .star i {
-    font-size: 1.875rem;
+    font-size: 1.5625rem;
     padding: 0 .5rem;
 }
 
@@ -92,4 +101,38 @@ nav {
 .description {
     font-size: 1.4375rem;
     font-weight: 600;
+}
+
+/* Section Portfolio */
+.box-portfolio {
+    text-align: center;
+}
+
+.box-portfolio h3 {
+    font-size: 2.8125rem;
+    padding-bottom: 1.25rem;
+}
+
+.star.star-portfolio {
+    color: #2b3d4f;
+}
+
+.star-portfolio::after,
+.star-portfolio::before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 140px;
+    margin: 0 .9375rem;
+    border-radius: .375rem;
+    background-color: #2b3d4f;
+}
+
+.section-portfolio {
+    padding: 4.375rem 0;
+}
+
+.card_img {
+    border-radius: 1.25rem;
+    overflow: hidden;
 }
